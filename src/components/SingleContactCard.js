@@ -7,12 +7,10 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    minWidth: 275,
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+    width: "30%",
+    textAlign: "center",
+    display: "inline-block",
+    margin: "1%",
   },
   title: {
     fontSize: 14,
@@ -28,10 +26,10 @@ export default function SingleContactCard({name, phoneNumber, email}) {
   return (
     <Card className={classes.card} variant="outlined">
       <CardContent>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" className={classes.pos}>
           {name}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} >
           {phoneNumber}
         </Typography>
         <Typography variant="body2" component="p">

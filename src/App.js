@@ -27,7 +27,7 @@ function App() {
             email="naveed.naqi30@myhunter.cuny.edu"
         ></SingleContactCard>
 
-        <Decrement num={10}></Decrement>
+        <Decrement num={13}></Decrement>
     </div>
   );
 }
